@@ -51,15 +51,15 @@ def get_cosine_similarity(x, y):
     # sp.distance.cosine(x, y)の返り値はcosine距離
     return 1 - sp.distance.cosine(x, y)
 
-f = open('static/pickle/kazutoshimeter.pickle','rb')
+f = open('./static/pickle/kazutoshimeter.pickle','rb')
 kazu_matrix = pickle.load(f)
 f.close
 
-f1 = open('static/pickle/skipgram.pickle','rb')
+f1 = open('./static/pickle/skipgram.pickle','rb')
 skipgram_model = pickle.load(f1)
 f1.close
 
-f2 = open('static/pickle/music_dataset.pickle','rb')
+f2 = open('./static/pickle/music_dataset.pickle','rb')
 dataset = pickle.load(f2)
 f2.close
 
